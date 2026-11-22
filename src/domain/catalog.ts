@@ -109,6 +109,13 @@ export const MODELS: WoodModel[] = [
   u('outdoor-storage-bench', 'ספסל אחסון לחוץ', 'outdoor', 'ספסל עם תא לאחסון כריות וציוד קטן.'),
   u('outdoor-umbrella-stand', 'מתקן למטריה לחוץ', 'outdoor', 'עמידה יציבה למטריית שמש על משטח בחוץ.'),
   u('outdoor-plant-bench', 'ספסל עם תיבת צמחים', 'outdoor', 'ספסל שמשולבת בו תיבה לצמחים.'),
+  // תוספות ממקורות חינמיים שנמצאו בחיפוש (ללא מידות עד אימות)
+  u('outdoor-adirondack-chair', 'כיסא אדירונדק', 'outdoor', 'כיסא גן רחב עם משענת מוטה, לשימוש בחוץ.'),
+  u('outdoor-picnic-table', 'שולחן פיקניק', 'outdoor', 'שולחן עם ספסלים מחוברים לארוחות בחוץ.'),
+  u('craftsman-picture-frame', 'מסגרת תמונה בסגנון קראפטסמן', 'decor', 'מסגרת עץ פשוטה בלי חיתוכי שיפוע בפינות.'),
+  u('kitchen-mug-tree', 'עץ ספלים למטבח', 'kitchen', 'תלייה מסודרת של ספלים על מוט או מסגרת.'),
+  u('drawer-organizer', 'ארגונית מגירה', 'storage', 'חלוקה של מגירה לתאים לחפצים קטנים.'),
+  u('desk-caddy', 'קדי שולחני', 'desk', 'מגש קטן על שולחן העבודה לעטים, פתקים וחפצים קטנים.'),
 ]
 
 export const getModel = (id: string): WoodModel | undefined =>

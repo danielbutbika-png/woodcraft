@@ -3,8 +3,8 @@ import { CATEGORIES, MODELS, getCategory } from '../domain/catalog'
 import { MODEL_SOURCES } from '../domain/sources'
 
 describe('מאגר הדגמים', () => {
-  it('מכיל 46 דגמים ב-7 קטגוריות', () => {
-    expect(MODELS).toHaveLength(46)
+  it('מכיל 52 דגמים ב-7 קטגוריות', () => {
+    expect(MODELS).toHaveLength(52)
     expect(CATEGORIES).toHaveLength(7)
   })
 

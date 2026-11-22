@@ -15,6 +15,47 @@ export interface ModelSource {
 }
 
 export const MODEL_SOURCES: Record<string, ModelSource[]> = {
+  'outdoor-chair': [
+    { title: 'Modern Outdoor Chair from 2x4s and 2x6s', publisher: 'Ana-White.com', url: 'https://ana-white.com/comment/96901' },
+    { title: 'Outdoor Chair Plans', publisher: 'myoutdoorplans.com', url: 'https://myoutdoorplans.com/furniture/outdoor-chair-plans/' },
+  ],
+  'outdoor-lounge-chair': [
+    { title: 'Essential Wood Outdoor Chair Frame for Deep Seat Cushion', publisher: 'Ana-White.com', url: 'https://ana-white.com/comment/139891' },
+    { title: 'Lounge Chair Plans', publisher: 'myoutdoorplans.com', url: 'https://myoutdoorplans.com/furniture/lounge-chair-plans/' },
+    { title: 'DIY Outdoor Lounge Chair', publisher: 'Shanty2Chic', url: 'https://www.shanty-2-chic.com/diy-outdoor-lounge-chair-2/' },
+  ],
+  'outdoor-folding-table': [
+    { title: 'Folding Picnic Table Plans', publisher: 'myoutdoorplans.com', url: 'https://myoutdoorplans.com/?p=20935' },
+  ],
+  'outdoor-adirondack-chair': [
+    { title: 'Free Adirondack Chair Plans', publisher: 'myoutdoorplans.com', url: 'https://myoutdoorplans.com/furniture/free-adirondack-chair-plans/' },
+  ],
+  'outdoor-picnic-table': [
+    { title: '2 Person Picnic Table - Free Plans', publisher: 'Ana-White.com', url: 'https://ana-white.com/woodworking-projects/2-person-picnic-table-free-plans' },
+    { title: '12 Free Picnic Table Plans (roundup)', publisher: 'Homedit', url: 'https://www.homedit.com/picnic-table-plans' },
+  ],
+  'picture-frame': [
+    { title: 'Easy DIY Picture Frame (free plans)', publisher: 'Saws On Skates', url: 'https://sawsonskates.com/how-to-make-a-no-miter-cut-picture-frame-free-plans/' },
+    { title: 'Picture Frame Plans', publisher: 'myoutdoorplans.com', url: 'https://myoutdoorplans.com/?p=6965' },
+  ],
+  'craftsman-picture-frame': [
+    { title: 'Craftsman Frame (free plans)', publisher: 'Ana-White.com', url: 'https://ana-white.com/comment/43483' },
+    { title: 'Making a Craftsman Style Picture Frame with No Miters (free plans)', publisher: 'Woodsmith', url: 'https://woodsmith.com/article/making-a-craftsman-style-picture-frame-with-no-miters-free-plans' },
+  ],
+  'spice-rack': [
+    { title: 'How to Build a DIY Countertop Spice Rack (free plans)', publisher: 'Shanty2Chic', url: 'https://www.shanty-2-chic.com/countertop-spice-rack/' },
+    { title: 'DIY Tiered Spice Rack', publisher: 'Saws On Skates', url: 'https://sawsonskates.com/diy-tiered-spice-rack-plans/' },
+  ],
+  'kitchen-mug-tree': [
+    { title: 'Kitchen Accessories: free plans list', publisher: 'Woodworkers Workshop', url: 'https://woodworkersworkshop.com/ResourcesCategory/440' },
+  ],
+  'drawer-organizer': [
+    { title: 'Drawer Organizer: free plans list', publisher: 'Woodworkers Workshop', url: 'https://woodworkersworkshop.com/ResourcesCategory/887' },
+  ],
+  'desk-caddy': [
+    { title: 'Desktop Office or Vanity Beauty Organizer', publisher: 'Ana-White.com', url: 'https://ana-white.com/comment/73593' },
+    { title: 'Build a Simple Desk Organizer', publisher: 'Fine Woodworking', url: 'https://www.finewoodworking.com/project-guides/beginner-projects/weekend-project-a-simple-desk-organizer' },
+  ],
   'outdoor-bench': [
     { title: 'Free outdoor bench plans', publisher: 'myoutdoorplans.com', url: 'https://myoutdoorplans.com/furniture/free-outdoor-bench-plans/' },
     { title: 'Sawhorse Outdoor Bench', publisher: 'Ana-White.com', url: 'https://ana-white.com/comment/56815' },
