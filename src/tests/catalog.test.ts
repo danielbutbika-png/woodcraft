@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import { CATEGORIES, MODELS, getCategory } from '../domain/catalog'
+import { MODEL_SOURCES } from '../domain/sources'
 
 describe('מאגר הדגמים', () => {
   it('מכיל 46 דגמים ב-7 קטגוריות', () => {
@@ -29,6 +30,18 @@ describe('מאגר הדגמים', () => {
     for (const m of MODELS) {
       expect(m.name.length, m.id).toBeGreaterThan(0)
       expect(/[֐-׿]/.test(m.name), m.id).toBe(true)
+    }
+  })
+
+  it('מקורות חיצוניים משויכים לדגמים קיימים ובקישורי https בלבד', () => {
+    const ids = new Set(MODELS.map((m) => m.id))
+    for (const [id, list] of Object.entries(MODEL_SOURCES)) {
+      expect(ids.has(id), id).toBe(true)
+      for (const src of list) {
+        expect(src.url.startsWith('https://'), src.url).toBe(true)
+        expect(src.title.length, src.url).toBeGreaterThan(0)
+        expect(src.publisher.length, src.url).toBeGreaterThan(0)
+      }
     }
   })
 })

@@ -3,6 +3,7 @@ import { useLiveQuery } from 'dexie-react-hooks'
 import { db } from '../db/db'
 import { getCategory, getModel } from '../domain/catalog'
 import { getPlan } from '../domain/plans'
+import { getModelSources } from '../domain/sources'
 import PlanCalculator from '../components/PlanCalculator'
 
 const SECTIONS: { title: string; note: string }[] = [
@@ -92,6 +93,24 @@ export default function ModelPage() {
         <PlanCalculator plan={plan} />
       ) : (
         <>
+          <div className="card no-print">
+            <h2 style={{ marginTop: 0 }}>מקורות חיצוניים חינמיים</h2>
+            <p className="muted">
+              אלה הפניות בלבד. WoodCraft לא בדקה את התוכניות האלה ולא העתיקה מהן מידות או שלבים.
+            </p>
+            {getModelSources(modelId).length === 0 ? (
+              <p>לא נמצא מקור חינמי מתאים לדגם הזה בחיפוש הנוכחי.</p>
+            ) : (
+              <ul>
+                {getModelSources(modelId).map((src) => (
+                  <li key={src.url}>
+                    <a href={src.url} target="_blank" rel="noopener noreferrer">{src.title}</a>{' '}
+                    <span className="muted">({src.publisher})</span>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </div>
           <h2>תוכן הדגם</h2>
           {SECTIONS.map((s, i) => (
             <div key={s.title} className="section-box">
