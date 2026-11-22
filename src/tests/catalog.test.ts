@@ -2,9 +2,9 @@ import { describe, expect, it } from 'vitest'
 import { CATEGORIES, MODELS, getCategory } from '../domain/catalog'
 
 describe('מאגר הדגמים', () => {
-  it('מכיל 36 דגמים ב-6 קטגוריות', () => {
-    expect(MODELS).toHaveLength(36)
-    expect(CATEGORIES).toHaveLength(6)
+  it('מכיל 46 דגמים ב-7 קטגוריות', () => {
+    expect(MODELS).toHaveLength(46)
+    expect(CATEGORIES).toHaveLength(7)
   })
 
   it('מזהי הדגמים ייחודיים', () => {

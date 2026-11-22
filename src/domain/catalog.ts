@@ -38,6 +38,7 @@ export const CATEGORIES: Category[] = [
   { id: 'kitchen', name: 'מטבח', icon: '🍳' },
   { id: 'garden', name: 'גינה ומרפסת', icon: '🌿' },
   { id: 'family', name: 'פרויקטים משפחתיים', icon: '🎲' },
+  { id: 'outdoor', name: 'ריהוט חוץ', icon: '🪑' },
 ]
 
 const u = (id: string, name: string, categoryId: string, usage: string): WoodModel => ({
@@ -97,6 +98,17 @@ export const MODELS: WoodModel[] = [
   u('low-book-stand', 'מעמד ספרים נמוך', 'family', 'מעמד ספרים בגובה ילדים.'),
   u('craft-organizer', 'ארגונית יצירה', 'family', 'אחסון חומרי יצירה ואומנות.'),
   u('name-frame', 'מסגרת שם שולחנית', 'family', 'מסגרת עם שם לקישוט על שולחן.'),
+  // ריהוט חוץ (טיוטת קטלוג בלבד: אין מידות או מפרטים עד לאימות ממקור)
+  u('outdoor-bench', 'ספסל גן', 'outdoor', 'ישיבה לשניים או שלושה במרחב חיצוני.'),
+  u('outdoor-chair', 'כיסא גן פשוט', 'outdoor', 'כיסא ישיבה לשימוש בחוץ.'),
+  u('outdoor-table', 'שולחן גן קטן', 'outdoor', 'שולחן לאוכל או לשתייה בחוץ.'),
+  u('outdoor-side-table', 'שולחן צד לגינה', 'outdoor', 'משטח קטן ליד כיסא או ספסל בחוץ.'),
+  u('outdoor-folding-table', 'שולחן מרפסת מתקפל', 'outdoor', 'שולחן שניתן לקפל ולאחסן במרפסת.'),
+  u('outdoor-lounge-chair', 'כורסת גן', 'outdoor', 'ישיבה נוחה עם משענת לשימוש בחוץ.'),
+  u('outdoor-balcony-bench', 'ספסל מרפסת צר', 'outdoor', 'ספסל קטן לפינת מרפסת צרה.'),
+  u('outdoor-storage-bench', 'ספסל אחסון לחוץ', 'outdoor', 'ספסל עם תא לאחסון כריות וציוד קטן.'),
+  u('outdoor-umbrella-stand', 'מתקן למטריה לחוץ', 'outdoor', 'עמידה יציבה למטריית שמש על משטח בחוץ.'),
+  u('outdoor-plant-bench', 'ספסל עם תיבת צמחים', 'outdoor', 'ספסל שמשולבת בו תיבה לצמחים.'),
 ]
 
 export const getModel = (id: string): WoodModel | undefined =>
