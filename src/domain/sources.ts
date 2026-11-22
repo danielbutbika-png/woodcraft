@@ -6,6 +6,7 @@
  * - WoodCraft לא העתיקה מידות או שלבים מהמקורות האלה. הקישור הוא הפניה בלבד.
  * - כל תוכנית שמבוססת על מקור כזה נשארת לא מאומתת עד בדיקה מקצועית.
  * - דגם בלי מקור כאן: לא נמצא מקור חינמי מתאים בחיפוש הנוכחי.
+ * - כל קישור נבדק פעם אחת: נפתח, וסומן כחינמי רק אם התוכנית עצמה מוצגת בלי תשלום.
  */
 
 export interface ModelSource {
@@ -35,7 +36,7 @@ export const MODEL_SOURCES: Record<string, ModelSource[]> = {
     { title: '12 Free Picnic Table Plans (roundup)', publisher: 'Homedit', url: 'https://www.homedit.com/picnic-table-plans' },
   ],
   'picture-frame': [
-    { title: 'Easy DIY Picture Frame (free plans)', publisher: 'Saws On Skates', url: 'https://sawsonskates.com/how-to-make-a-no-miter-cut-picture-frame-free-plans/' },
+    { title: 'Easy DIY Picture Frame (free instructions; detailed PDF is paid)', publisher: 'Saws On Skates', url: 'https://sawsonskates.com/how-to-make-a-no-miter-cut-picture-frame-free-plans/' },
     { title: 'Picture Frame Plans', publisher: 'myoutdoorplans.com', url: 'https://myoutdoorplans.com/?p=6965' },
   ],
   'craftsman-picture-frame': [
@@ -44,7 +45,6 @@ export const MODEL_SOURCES: Record<string, ModelSource[]> = {
   ],
   'spice-rack': [
     { title: 'How to Build a DIY Countertop Spice Rack (free plans)', publisher: 'Shanty2Chic', url: 'https://www.shanty-2-chic.com/countertop-spice-rack/' },
-    { title: 'DIY Tiered Spice Rack', publisher: 'Saws On Skates', url: 'https://sawsonskates.com/diy-tiered-spice-rack-plans/' },
   ],
   'kitchen-mug-tree': [
     { title: 'Kitchen Accessories: free plans list', publisher: 'Woodworkers Workshop', url: 'https://woodworkersworkshop.com/ResourcesCategory/440' },

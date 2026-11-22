@@ -44,4 +44,11 @@ describe('מאגר הדגמים', () => {
       }
     }
   })
+
+  it('לכל דגם יש סוג איור מוגדר', async () => {
+    const { ILLUSTRATION_KIND } = await import('../domain/illustrationKinds')
+    for (const m of MODELS) {
+      expect(ILLUSTRATION_KIND[m.id], m.id).toBeDefined()
+    }
+  })
 })

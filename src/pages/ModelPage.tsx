@@ -4,6 +4,7 @@ import { db } from '../db/db'
 import { getCategory, getModel } from '../domain/catalog'
 import { getPlan } from '../domain/plans'
 import { getModelSources } from '../domain/sources'
+import { ModelIllustration } from '../components/ModelIllustration'
 import PlanCalculator from '../components/PlanCalculator'
 
 const SECTIONS: { title: string; note: string }[] = [
@@ -66,7 +67,10 @@ export default function ModelPage() {
       </div>
       <h1 className="page-title">{plan?.name ?? model.name}</h1>
 
-      <div className="thumb no-print" aria-hidden="true">🪵</div>
+      <figure className="model-illustration no-print">
+        <ModelIllustration modelId={modelId} name={plan?.name ?? model.name} />
+        <figcaption className="muted">המחשה בלבד: איור מקורי של הדגם לאחר הרכבה. זה אינו שרטוט בנייה ואינו מציג מידות.</figcaption>
+      </figure>
 
       <div className="notice no-print" role="alert">
         <strong>הדגם טרם אומת</strong>

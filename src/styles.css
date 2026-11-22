@@ -224,3 +224,6 @@ button:disabled { opacity: 0.5; cursor: not-allowed; }
 .pdf-sheet svg { width: 100%; height: auto; display: block; margin: 4px 0; }
 .pdf-sheet ul { padding-inline-start: 18px; margin: 4px 0; }
 .pdf-sheet .pdf-step svg { max-width: 640px; }
+
+.model-illustration { margin: 16px 0; text-align: center; }
+.model-illustration figcaption { font-size: 0.9rem; margin-top: 8px; }
